@@ -5,86 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coin Clicker</title>
     <link rel="stylesheet" href="styles/style.css">
+         <script src="javascript/overlay.js"></script>
 </head>
 <body>
      <header>
-        <nav>
-            <div><button onclick="overlayOn('invest')" id="investButton"><a>INVEST</a></button></div>
-            <div><button id="loginButton" onclick="overlayOn('login')"><a>LOGIN</a></button></div>
-        </nav>
+        <nav class="CapabilityButton">
+            <div><button onclick="overlayOn('button1')" id="2Button"><a>button1</a></button></div>
+            <div><button id="2Button" onclick="overlayOn('button2')"><a>button2</a></button></div>
+        </nav class=CapabilityButton>
      </header>
-     <main onclick="overlayOff('invest') ; overlayOff('login') ; overlayOff('leaderboard') ">
+     <main class="main1"onclick="overlayOff('button1') ; overlayOff('button2') ;  ">
         <canvas id="canvas"></canvas>
-        <div class="items">
-            <div class="amount"><p id="score"></p></div>
-            <div class="logo"><button class="logo" onclick="add()"><img src="img/logo.png"></button></div>
+        <div id="button1" >
+            <div class="close" onclick="overlayOff('button1')">x</div>
+                <h1>Capability description 1</h1>
+ 
         </div>
-        <div class="icons">
-            <button class="settings"><img src="img/settings.png" class="settings"></button>
-            <button id="leaderboardButton" onclick="overlayOn('leaderboard')">Leaderboard</button>
-        </div>
-        <div id="invest" >
-            <div class="close" onclick="overlayOff('invest')">x</div>
-            <ul id="invest-left">
-                <h1>INVEST</h1>
-                <table>
-                    <tr>
-                      <th>DITCOIN</th>
-                      <td> xxx </td>
-                      <td> <button class="buybut">Buy</button> </td>
-                      <td class="tableimg"> img </td>
-                    </tr>
-                    <tr>
-                      <th>DECACOIN</th>
-                      <td> xxx </td>
-                      <td> <button class="buybut">Buy</button> </td>
-                      <td class="tableimg"> img </td>
-                    </tr>
-                    <tr>
-                      <th>DIX</th>
-                      <td> xxx </td>
-                      <td> <button class="buybut">Buy</button> </td>
-                      <td class="tableimg"> img </td>
-                    </tr>
-                  </table>
-            </ul>
-            <ul id="invest-middle">
-                <h2>SHARES</h2>
-                <table>
-                    <tr>
-                      <th>GOLD</th>
-                      <td> xxx </td>
-                      <td> <button class="buybut">Buy</button> </td>
-                      <td class="tableimg"> img </td>
-                    </tr>
-                    <tr>
-                      <th>DECACOIN</th>
-                      <td> xxx </td>
-                      <td> <button class="buybut">Buy</button> </td>
-                      <td class="tableimg"> img </td>
-                    </tr>
-                    <tr>
-                      <th>GAS</th>
-                      <td> xxx </td>
-                      <td> <button class="buybut">Buy</button> </td>
-                      <td class="tableimg"> img </td>
-                    </tr>
-                  </table>
-            </ul>
-        </div>
-        <div id="login" >
-            <div class="close" onclick="overlayOff('login')">x</div>
-        </div>
-        <div id="leaderboard" >
-            <div class="close" onclick="overlayOff('leaderboard')">x</div>
+        <div id="button2" >
+            <div class="close" onclick="overlayOff('button2')">x</div>
+            <h1>Capability description 2</h1>
         </div>
      </main>
      <footer>
         
      </footer>
-     <script src="javascript/value.js"></script>
-     <script src="javascript/overlay.js"></script>
-     <script src="javascript/particles.js"></script>
 </body>
 
 </html>
